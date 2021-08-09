@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import Page from "./Page";
 
-describe("App Component", () => {
+describe("Page Component", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>,
+      <Page className="Test">
+        <div></div>
+      </Page>,
       div
     );
     ReactDOM.unmountComponentAtNode(div);

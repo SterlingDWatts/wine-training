@@ -1,0 +1,10 @@
+.StudyGuide {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 639px) {
+  .StudyGuide {
+    font-size: 17.778px;
+  }
+}

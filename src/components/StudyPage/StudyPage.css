@@ -1,0 +1,42 @@
+.StudyPage {
+  margin-top: 26.667px;
+}
+
+.StudyPage header {
+  margin-bottom: 67.5px;
+  cursor: default;
+}
+
+.StudyPage h1 {
+  font-size: 60px;
+  margin-top: 26.667px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 26.667px;
+}
+
+.StudyPage h2 {
+  font-size: 26.667px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 11.852px;
+  line-height: 1;
+}
+
+.StudyPage p {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.StudyPage div.bottom {
+  background-color: #e8e9ea;
+  height: 30.765px;
+  width: 100vw;
+  max-width: 683px;
+  position: relative;
+  left: -20px;
+}
+
+.StudyPage:last-of-type div.bottom {
+  display: none;
+}

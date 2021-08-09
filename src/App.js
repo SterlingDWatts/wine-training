@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
+import Landing from "./pages/Landing/Landing";
+import Viticulture from "./pages/Viticulture/Viticulture";
+import Winemaking from "./pages/Winemaking/Winemaking";
+import Napa from "./pages/Napa/Napa";
+import Navbar from "./components/Navbar/Navbar";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Switch>
+        <Route path="/viticulture">
+          <Viticulture />
+        </Route>
+        <Route path="/winemaking">
+          <Winemaking />
+        </Route>
+        <Route path="/napa">
+          <Napa />
+        </Route>
+        <Route path="/" exact>
+          <Landing />
+        </Route>
+      </Switch>
     </div>
   );
-}
+};
 
 export default App;

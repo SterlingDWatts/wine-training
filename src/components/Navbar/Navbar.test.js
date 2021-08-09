@@ -1,17 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDom from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import Navbar from "./Navbar";
 
-describe("App Component", () => {
+describe("Navbar Component", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
-    ReactDOM.render(
+    ReactDom.render(
       <BrowserRouter>
-        <App />
+        <Navbar />
       </BrowserRouter>,
       div
     );
-    ReactDOM.unmountComponentAtNode(div);
+    ReactDom.unmountComponentAtNode(div);
   });
 });

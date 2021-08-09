@@ -1,0 +1,23 @@
+.Hamburger {
+  cursor: pointer;
+  display: block;
+  height: 18px;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+button.Hamburger {
+  padding: 0;
+  border: none;
+  background-color: #ffffff00;
+}
+
+.Hamburger div.hamburger-stripe {
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+  border-radius: 20px;
+}

@@ -1,14 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import NavigationCard from "./NavigationCard";
+import AtlasPeak from "../../assets/AtlasPeak.png";
 
-describe("App Component", () => {
-  it("renders without crashing", () => {
+describe("NavigationCard Component", () => {
+  it("render without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
       <BrowserRouter>
-        <App />
+        <NavigationCard to="/atlas" src={AtlasPeak} alt="Atlas Peak">
+          Test
+        </NavigationCard>
       </BrowserRouter>,
       div
     );

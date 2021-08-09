@@ -1,0 +1,91 @@
+.Navbar {
+  min-height: 60px;
+  width: 100vw;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: top 0.6s, background-color 0.6s;
+}
+
+.Navbar.navbar--hidden {
+  top: -50px;
+}
+
+.Navbar nav.main-navigation {
+  position: relative;
+  top: 0;
+  height: 60px;
+  max-width: 944px;
+  margin: 0 auto;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  transition: background-color 0.6s;
+}
+
+.Navbar .right {
+  padding-right: 16px;
+}
+
+.Navbar .left {
+  flex-grow: 1;
+  padding-left: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.Navbar nav.subnav {
+  z-index: 14;
+  width: 100vw;
+  max-width: 944px;
+  position: absolute;
+  top: 59px;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  transition: top 0.6s, background-color 0.6s;
+}
+
+.Navbar nav.subnav.subnav--hidden {
+  top: -152px;
+}
+
+.Navbar nav.subnav .section {
+  padding: 16px;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: rgb(85, 26, 139);
+  transition: color 0.6s;
+}
+
+.Navbar nav.subnav .section span {
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 32px;
+  height: 40px;
+  cursor: pointer;
+  color: #595959;
+}
+
+.Navbar.navbar--clear,
+.Navbar.navbar--clear nav.main-navigation,
+.Navbar.navbar--clear nav.subnav {
+  background-color: #ffffff00;
+  border: none;
+}
+
+.Navbar.navbar--clear a {
+  color: white;
+}
+
+.Navbar.navbar--clear .Hamburger .hamburger-stripe {
+  background-color: white;
+}

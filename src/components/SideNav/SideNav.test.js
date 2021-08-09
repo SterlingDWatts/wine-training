@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import SideNav from "./SideNav";
 
-describe("App Component", () => {
+describe("SideNav Component", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>,
+      <SideNav header="test">
+        <div></div>
+      </SideNav>,
       div
     );
     ReactDOM.unmountComponentAtNode(div);

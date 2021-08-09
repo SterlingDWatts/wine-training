@@ -1,0 +1,30 @@
+.NavigationCard {
+  margin: 16px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.NavigationCard a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.NavigationCard div.container {
+  height: 100%;
+  width: 100%;
+}
+
+.NavigationCard img {
+  width: 100%;
+}
+
+.NavigationCard div.text {
+  padding: 16px;
+}
+
+.NavigationCard .title {
+  text-align: center;
+}

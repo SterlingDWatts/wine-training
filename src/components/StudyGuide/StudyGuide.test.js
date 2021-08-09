@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import StudyGuide from "./StudyGuide";
 
-describe("App Component", () => {
+describe("StudyGuide Component", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>,
+      <StudyGuide>
+        <div></div>
+      </StudyGuide>,
       div
     );
     ReactDOM.unmountComponentAtNode(div);
