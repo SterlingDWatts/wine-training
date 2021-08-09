@@ -16,11 +16,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
     "test": "react-scripts test",
+    "prebuild": "CI=true react-scripts test --colors",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "vercel --prod",
     "eject": "react-scripts eject",
-    "prepare": "husky install",
-    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
