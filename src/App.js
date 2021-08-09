@@ -7,26 +7,24 @@ import Napa from "./pages/Napa/Napa";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 
-const App = () => {
-  return (
-    <div className="App">
-      <Navbar />
-      <Switch>
-        <Route path="/viticulture">
-          <Viticulture />
-        </Route>
-        <Route path="/winemaking">
-          <Winemaking />
-        </Route>
-        <Route path="/napa">
-          <Napa />
-        </Route>
-        <Route path="/" exact>
-          <Landing />
-        </Route>
-      </Switch>
-    </div>
-  );
-};
+const App = () => (
+  <div className="App">
+    <Navbar />
+    <Switch>
+      <Route path="/viticulture">
+        <Viticulture />
+      </Route>
+      <Route path="/winemaking">
+        <Winemaking />
+      </Route>
+      <Route path="/napa">
+        <Napa />
+      </Route>
+      <Route path="/" exact>
+        <Landing />
+      </Route>
+    </Switch>
+  </div>
+);
 
 export default App;
