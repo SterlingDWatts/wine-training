@@ -6,6 +6,7 @@ import ViticultureThumb from "../../assets/ViticultureThumb.png";
 import NapaValleyThumb from "../../assets/NapaValleyThumb.png";
 import SonomaFieldThumb from "../../assets/SonomaFieldThumb.png";
 import CentralCoastVineyardThumb from "../../assets/CentralCoastVineyardThumb.png";
+import PacificNorthwestVineyard from "../../assets/PacificNorthwestVineyard.png";
 import "./Landing.css";
 
 const Landing = () => {
@@ -36,6 +37,14 @@ const Landing = () => {
           onClick={navigateToTop}
         >
           Central Coast
+        </NavigationCard>
+        <NavigationCard
+          src={PacificNorthwestVineyard}
+          alt="Pacific Northwest Vineyard"
+          to="/pacific-northwest"
+          onClick={navigateToTop}
+        >
+          Pacific Northwest
         </NavigationCard>
       </nav>
     </div>

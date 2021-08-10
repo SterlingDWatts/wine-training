@@ -1,13 +1,14 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
 import Landing from "./pages/Landing/Landing";
 import Viticulture from "./pages/Viticulture/Viticulture";
 import Winemaking from "./pages/Winemaking/Winemaking";
 import Napa from "./pages/Napa/Napa";
-import CentralCoast from "./pages/CentralCoast/CentralCoast";
-import Navbar from "./components/Navbar/Navbar";
-import "./App.css";
 import Sonoma from "./pages/Sonoma/Sonoma";
+import CentralCoast from "./pages/CentralCoast/CentralCoast";
+import PacificNorthwest from "./pages/PacificNorthwest/PacificNorthwest";
+import "./App.css";
 
 const App = () => (
   <div className="App">
@@ -30,6 +31,9 @@ const App = () => (
       </Route>
       <Route path="/central-coast">
         <CentralCoast />
+      </Route>
+      <Route path="/pacific-northwest">
+        <PacificNorthwest />
       </Route>
     </Switch>
   </div>

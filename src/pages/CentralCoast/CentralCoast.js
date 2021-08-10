@@ -20,7 +20,7 @@ const CentralCoast = () => {
   const ref6 = useRef(null);
   return (
     <>
-      <Page className="Napa">
+      <Page className="CentralCoast">
         <StudyGuide>
           <StudyPage>
             <header>
