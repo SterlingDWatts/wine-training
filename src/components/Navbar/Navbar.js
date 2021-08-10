@@ -60,25 +60,27 @@ const Navbar = () => {
           "subnav--hidden": !showNav || !showSubnav,
         })}
       >
-        <div className="section">
-          <Link to="/viticulture" onClick={hideSubnav}>
-            <span>Viticulture</span>
-          </Link>
-          <Link to="/winemaking" onClick={hideSubnav}>
-            <span>Winemaking</span>
-          </Link>
-          <Link to="/napa" onClick={hideSubnav}>
-            <span>Napa Valley</span>
-          </Link>
-          <Link to="/sonoma" onClick={hideSubnav}>
-            <span>Sonoma</span>
-          </Link>
-          <Link to="/central-coast" onClick={hideSubnav}>
-            <span>Central Coast</span>
-          </Link>
-          <Link to="pacific-northwest" onClick={hideSubnav}>
-            <span>Pacific Northwest</span>
-          </Link>
+        <div className="container">
+          <div className="section">
+            <Link to="/viticulture" onClick={hideSubnav}>
+              <span>Viticulture</span>
+            </Link>
+            <Link to="/winemaking" onClick={hideSubnav}>
+              <span>Winemaking</span>
+            </Link>
+            <Link to="/napa" onClick={hideSubnav}>
+              <span>Napa Valley</span>
+            </Link>
+            <Link to="/sonoma" onClick={hideSubnav}>
+              <span>Sonoma</span>
+            </Link>
+            <Link to="/central-coast" onClick={hideSubnav}>
+              <span>Central Coast</span>
+            </Link>
+            <Link to="pacific-northwest" onClick={hideSubnav}>
+              <span>Pacific Northwest</span>
+            </Link>
+          </div>
         </div>
       </nav>
     </div>
