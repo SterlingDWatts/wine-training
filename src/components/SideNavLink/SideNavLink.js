@@ -16,7 +16,7 @@ const SideNavLink = ({ reference, children }) => {
         const { offsetTop, clientHeight } = reference.current.parentElement;
         setIsRefVisible(currentPos + adjustment > offsetTop && currentPos + adjustment < offsetTop + clientHeight);
       } catch (e) {
-        // do nothing
+        setIsRefVisible(false);
       }
     };
 

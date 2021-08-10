@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link, useRouteMatch } from "react-router-dom";
 import classnames from "classnames";
+import useScroll from "../../hooks/useScroll";
 import Hamburger from "../Hamburger/Hamburger";
 import CloseButton from "../CloseButton/CloseButton";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, atTop] = useScroll();
   const [showSubnav, setShowSubnav] = useState(false);
-  const [atTop, setAtTop] = useState(window.pageYOffset === 0);
 
   const onLandingPage = useRouteMatch({
     path: "/",
@@ -21,10 +20,6 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setShowSubnav(false);
-      setAtTop(window.pageYOffset === 0);
-      const currentScrollPos = window.pageYOffset;
-      setShowNav(prevScrollPos > currentScrollPos);
-      setPrevScrollPos(currentScrollPos);
     };
 
     window.addEventListener("scroll", handleScroll);
