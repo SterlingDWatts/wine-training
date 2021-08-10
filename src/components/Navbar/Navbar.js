@@ -73,6 +73,9 @@ const Navbar = () => {
           <Link to="/sonoma" onClick={hideSubnav}>
             <span>Sonoma</span>
           </Link>
+          <Link to="/central-coast" onClick={hideSubnav}>
+            <span>Central Coast</span>
+          </Link>
         </div>
       </nav>
     </div>

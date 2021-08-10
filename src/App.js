@@ -4,6 +4,7 @@ import Landing from "./pages/Landing/Landing";
 import Viticulture from "./pages/Viticulture/Viticulture";
 import Winemaking from "./pages/Winemaking/Winemaking";
 import Napa from "./pages/Napa/Napa";
+import CentralCoast from "./pages/CentralCoast/CentralCoast";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import Sonoma from "./pages/Sonoma/Sonoma";
@@ -26,6 +27,9 @@ const App = () => (
       </Route>
       <Route path="/" exact>
         <Landing />
+      </Route>
+      <Route path="/central-coast">
+        <CentralCoast />
       </Route>
     </Switch>
   </div>
