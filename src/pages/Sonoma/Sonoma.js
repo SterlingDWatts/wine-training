@@ -7,6 +7,7 @@ import StudyPage from "../../components/StudyPage/StudyPage";
 import Content from "../../components/Content/Content";
 import StudyImage from "../../components/StudyImage/StudyImage";
 import ForYourInfo from "../../components/ForYourInfo/ForYourInfo";
+import SonomaField from "../../assets/SonomaField.png";
 import SonomaCountyMap from "../../assets/SonomaCountyMap.jpg";
 import "./Sonoma.css";
 
@@ -48,6 +49,7 @@ const Sonoma = () => {
                   year for Pinot Noir and Chardonnay may yield mixed results for Cabernet Sauvignon and Zinfandel.
                 </p>
               </ForYourInfo>
+              <StudyImage src={SonomaField} alt="Sonoma County Vineyard" />
             </Content>
           </StudyPage>
           <StudyPage>

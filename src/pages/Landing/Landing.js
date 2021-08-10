@@ -4,6 +4,7 @@ import Quintessa from "../../assets/Quintessa.jpeg";
 import WhiteGrapesThumb from "../../assets/WhiteGrapesThumb.png";
 import ViticultureThumb from "../../assets/ViticultureThumb.png";
 import NapaValleyThumb from "../../assets/NapaValleyThumb.png";
+import SonomaFieldThumb from "../../assets/SonomaFieldThumb.png";
 import "./Landing.css";
 
 const Landing = () => {
@@ -23,6 +24,9 @@ const Landing = () => {
         </NavigationCard>
         <NavigationCard src={NapaValleyThumb} alt="Napa Valley" to="/napa" onClick={navigateToTop}>
           Napa Valley
+        </NavigationCard>
+        <NavigationCard src={SonomaFieldThumb} alt="Sonoma County Vineyard" to="/sonoma" onClick={navigateToTop}>
+          Sonoma County
         </NavigationCard>
       </nav>
     </div>
