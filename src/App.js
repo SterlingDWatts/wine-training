@@ -6,6 +6,7 @@ import Winemaking from "./pages/Winemaking/Winemaking";
 import Napa from "./pages/Napa/Napa";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
+import Sonoma from "./pages/Sonoma/Sonoma";
 
 const App = () => (
   <div className="App">
@@ -19,6 +20,9 @@ const App = () => (
       </Route>
       <Route path="/napa">
         <Napa />
+      </Route>
+      <Route path="/sonoma">
+        <Sonoma />
       </Route>
       <Route path="/" exact>
         <Landing />

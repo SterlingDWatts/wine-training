@@ -70,6 +70,9 @@ const Navbar = () => {
           <Link to="/napa" onClick={hideSubnav}>
             <span>Napa Valley</span>
           </Link>
+          <Link to="/sonoma" onClick={hideSubnav}>
+            <span>Sonoma</span>
+          </Link>
         </div>
       </nav>
     </div>
