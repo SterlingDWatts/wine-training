@@ -37,6 +37,10 @@
   left: -20px;
 }
 
+.StudyPage:last-of-type {
+  min-height: 100vh;
+}
+
 .StudyPage:last-of-type div.bottom {
   display: none;
 }
