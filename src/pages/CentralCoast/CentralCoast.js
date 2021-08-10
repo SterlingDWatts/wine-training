@@ -7,8 +7,11 @@ import StudyPage from "../../components/StudyPage/StudyPage";
 import Content from "../../components/Content/Content";
 import ForYourInfo from "../../components/ForYourInfo/ForYourInfo";
 import StudyImage from "../../components/StudyImage/StudyImage";
-import CentralCoastMap from "../../assets/CentralCoastMap.jpeg";
 import CentralCoastVineyard from "../../assets/CentralCoastVineyard.png";
+import PasoRobles from "../../assets/PasoRobles.png";
+import CarmelValley from "../../assets/CarmelValley.png";
+import SonomaSyrah from "../../assets/SonomaSyrah.png";
+import CentralCoastMap from "../../assets/CentralCoastMap.jpeg";
 import "./CentralCoast.css";
 
 const CentralCoast = () => {
@@ -69,6 +72,7 @@ const CentralCoast = () => {
                   varieties—such as Syrah, Grenache, Mourvèdre, Viognier, Marsanne, and Roussanne— on the West Coast.
                 </p>
               </ForYourInfo>
+              <StudyImage src={PasoRobles} alt="Paso Robles" caption="Paso Robles" />
             </Content>
           </StudyPage>
           <StudyPage>
@@ -133,6 +137,7 @@ const CentralCoast = () => {
                 generally, though Syrah wines are also successful. Other AVAs in the county include Monterey, Arroyo
                 Seco, Carmel Valley, Hames Valley, San Antonio Valley, San Bernabe, and San Lucas.
               </p>
+              <StudyImage src={CarmelValley} alt="Carmel Valley" caption="Carmel Valley AVA" />
               <h4>San Benito County</h4>
               <p>
                 San Benito County lies east of Monterey County and features some of the Central Coast’s more inland
@@ -267,6 +272,7 @@ const CentralCoast = () => {
                 grown closer to the Pacific. Single-variety bottlings as well as blends, made with other Rhône grapes
                 such as Grenache and Mourvèdre, are produced.
               </p>
+              <StudyImage src={SonomaSyrah} alt="Syrah Grapes" caption="Syrah" />
               <p>
                 <strong>Zinfandel:</strong> Sometimes referred to as “America’s grape,” Zinfandel is Croatian in origin.
                 Some of the Central Coast’s Zinfandel vines exceed 100 years of age and are among the region’s oldest

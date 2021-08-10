@@ -8,6 +8,10 @@ import Content from "../../components/Content/Content";
 import ForYourInfo from "../../components/ForYourInfo/ForYourInfo";
 import StudyImage from "../../components/StudyImage/StudyImage";
 import PacificNorthwestVineyard from "../../assets/PacificNorthwestVineyard.png";
+import FortVancouver from "../../assets/FortVancouver.png";
+import ValleyViewWinery from "../../assets/ValleyViewWinery.png";
+import PinotGris from "../../assets/PinotGris.png";
+import PacificNWMountains from "../../assets/PacificNWMountains.png";
 import OregonMap from "../../assets/OregonMap.png";
 import WashingtonMap from "../../assets/WashingtonMap.jpg";
 import "./PacificNorthwest.css";
@@ -67,6 +71,12 @@ const PacificNorthwest = () => {
                 Willamette Valley and Yakima Valley, respectively. Today, Washington has more than 1,000 wineries, while
                 nearly 800 call Oregon home.
               </p>
+              <StudyImage src={FortVancouver} alt="Fort Vancouver, Washington" caption="Fort Vancouver, Washington" />
+              <StudyImage
+                src={ValleyViewWinery}
+                alt="Valley View Winery, Rogue Valley, Oregon"
+                caption="Valley View Winery, Rogue Valley, Oregon"
+              />
             </Content>
           </StudyPage>
           <StudyPage>
@@ -223,6 +233,7 @@ const PacificNorthwest = () => {
                 richer Alsatian expressions than crisper Italian Pinot Grigio. Outside of Oregon, Pinot Gris is also
                 grown in Washington’s Puget Sound AVA.
               </p>
+              <StudyImage src={PinotGris} alt="Pinot Gris Grapes" caption="Pinot Gris" />
               <p>
                 <strong>Riesling:</strong> Both Washington and Oregon bottle many exceptional Rieslings, ranging from
                 bone-dry renditions to dessert wines. The wines are marked by an elevated acidity, as well as floral and
@@ -313,6 +324,7 @@ const PacificNorthwest = () => {
                 Oregon’s many lesser-known grapes are worth exploring with adventurous guests. Consider pouring them an
                 Umpqua Valley Tempranillo or a Puget Sound Müller-Thurgau.
               </p>
+              <StudyImage src={PacificNWMountains} alt="Pacific Northwest with mountains" />
             </Content>
           </StudyPage>
           <StudyPage>
