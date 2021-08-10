@@ -5,3 +5,8 @@
   color: #373a36;
   margin-bottom: 16px;
 }
+
+.SideNavLink.ref--visible {
+  background-color: black;
+  color: white;
+}
