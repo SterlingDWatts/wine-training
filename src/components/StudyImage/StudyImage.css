@@ -9,6 +9,10 @@
   left: -20px;
 }
 
+.StudyImage.fyi img {
+  width: 100%;
+}
+
 .StudyImage figcaption {
   text-align: center;
   line-height: 1;

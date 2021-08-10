@@ -8,6 +8,17 @@ import Content from "../../components/Content/Content";
 import StudyImage from "../../components/StudyImage/StudyImage";
 import ForYourInfo from "../../components/ForYourInfo/ForYourInfo";
 import SonomaField from "../../assets/SonomaField.png";
+import GeologicFaults from "../../assets/GeologicFaults.png";
+import RussianRiverValley from "../../assets/RussianRiverValley.png";
+import ChalkHill from "../../assets/ChalkHill.png";
+import DuttonLabel from "../../assets/DuttonLabel.png";
+import SonomaCoast from "../../assets/SonomaCoast.png";
+import SonomaFall from "../../assets/SonomaFall.png";
+import SonomaChard from "../../assets/SonomaChard.png";
+import SonomaSuav from "../../assets/SonomaSauv.png";
+import SonomaSyrah from "../../assets/SonomaSyrah.png";
+import SonomaSustainable from "../../assets/SonomaSustainable.png";
+import WineBottles from "../../assets/WineBottle.png";
 import SonomaCountyMap from "../../assets/SonomaCountyMap.jpg";
 import "./Sonoma.css";
 
@@ -78,6 +89,7 @@ const Sonoma = () => {
                 tectonic movements creating a series of mountains and valleys. As a result, many vineyards grow atop a
                 combination of volcanic or marine soils.
               </p>
+              <StudyImage src={GeologicFaults} alt="Map of geologic faults" />
             </Content>
           </StudyPage>
           <StudyPage>
@@ -107,6 +119,11 @@ const Sonoma = () => {
                 here, with Pinot Noir and Chardonnay the most esteemed varieties. Certain areas also yield excellent
                 Syrah and Zinfandel.
               </p>
+              <StudyImage
+                src={RussianRiverValley}
+                alt="Russian River Valley Vineyard"
+                caption="Russian River Valley Vineyard"
+              />
               <p>
                 <strong>Green Valley of Russian River Valley AVA:</strong> Tucked into the southwest sector of the
                 Russian River Valley, Green Valley houses some of the coolest, foggiest sites in the area.
@@ -116,6 +133,7 @@ const Sonoma = () => {
                 Hill was named for its white volcanic ash—which is not actually chalk. Chardonnay, Cabernet Sauvignon,
                 and Merlot are its most important varieties.
               </p>
+              <StudyImage src={ChalkHill} alt="Chalk Hill Vineyard" caption="Chalk Hill Vineyard" />
               <p>
                 <strong>Fountaingrove District AVA:</strong> This small, hilly region, known for Bordeaux varieties, is
                 tucked into the Mayacamas Mountains on the Napa border. Its volcanic soils are the result of the
@@ -146,7 +164,9 @@ const Sonoma = () => {
                   labeling, meaning “Sonoma County” must appear alongside any sub-appellation named. Conjunctive
                   labeling laws also exist in Napa, where they were first enacted.
                 </p>
+                <StudyImage src={DuttonLabel} alt="Dutton Estate Wine Label" type="fyi" />
               </ForYourInfo>
+              <StudyImage src={SonomaCoast} alt="Sonoma Coast" />
               <h3>North Sonoma</h3>
               <p>
                 <strong>Northern Sonoma AVA:</strong> Northern Sonoma is a catch-all appellation that encompasses a
@@ -179,6 +199,7 @@ const Sonoma = () => {
                 Valley’s northwestern edge. It has no wineries but supplies fruit to several established Sonoma
                 producers.
               </p>
+              <StudyImage src={SonomaFall} alt="Vineyard in Fall" />
               <h3>South Sonoma</h3>
               <p>
                 <strong>Sonoma Valley AVA:</strong> Sonoma Valley AVA was the first appellation in the county. Since it
@@ -217,6 +238,7 @@ const Sonoma = () => {
                 in which hot air from the inland valleys sucks in cold winds from the Pacific, which are accelerated and
                 funneled into a narrow stretch of land before being whisked south into the San Pablo Bay.
               </p>
+              <StudyImage src={SonomaField} alt="Sonoma County Vineyard" />
             </Content>
           </StudyPage>
           <StudyPage>
@@ -234,6 +256,7 @@ const Sonoma = () => {
                 passionate champions of restrained Chardonnay. The grape remains a key ingredient in Sonoma’s sparkling
                 wines as well.
               </p>
+              <StudyImage src={SonomaChard} alt="Chardonnay Grapes" caption="Chardonnay" />
               <p>
                 <strong>Sauvignon Blanc:</strong> Although it represents less than one-fifth of the plantings of
                 Chardonnay, Sauvignon Blanc is Sonoma’s second most popular white variety. Some vintners produce
@@ -241,6 +264,7 @@ const Sonoma = () => {
                 create leaner, crisper renditions. In either event, Sauvignon Blanc is defined by its herbaceous
                 character and citrus notes. Sauvignon Blanc is occasionally referred to as “Fumé Blanc” in Sonoma.
               </p>
+              <StudyImage src={SonomaSuav} alt="Sauvignon Blanc Grapes" caption="Sauvignon Blanc" />
               <p>
                 <strong>Other White Grapes:</strong> Pinot Gris, Pinot Blanc, Viognier, Gewürztraminer, Riesling,
                 Marsanne, Roussanne, Sémillon, Chenin Blanc.
@@ -279,6 +303,7 @@ const Sonoma = () => {
                 renditions with juicy black-fruit tones. While it is bottled on its own, Syrah is often blended with
                 other Rhône varieties such as Grenache and Mourvèdre, as well as the white grape Viognier.
               </p>
+              <StudyImage src={SonomaSyrah} alt="Syrah Grapes" caption="Syrah" />
               <p>
                 <strong>Other Red Grapes:</strong> Cabernet Franc, Petit Verdot, Grenache, Carignan, Petite Sirah,
                 Mourvèdre, Barbera, Sangiovese, Tempranillo.
@@ -314,6 +339,7 @@ const Sonoma = () => {
                   vineyards. As over 85% of Sonoma’s vineyards are family-owned and roughly 80% are smaller than 100
                   acres, many believe sustainability practices are vital to the preservation of the region.
                 </p>
+                <StudyImage src={SonomaSustainable} alt="Sustainable Sonoma symbol" type="fyi" />
               </ForYourInfo>
             </Content>
           </StudyPage>
@@ -321,6 +347,7 @@ const Sonoma = () => {
             <h2 ref={ref7}>Sonoma County Map</h2>
             <Content>
               <StudyImage src={SonomaCountyMap} alt="Sonoma County Map" />
+              <StudyImage src={WineBottles} alt="Wine Bottles" />
             </Content>
           </StudyPage>
         </StudyGuide>
