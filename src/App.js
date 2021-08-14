@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./pages/Landing/Landing";
 import Viticulture from "./pages/Viticulture/Viticulture";
@@ -14,6 +14,9 @@ const App = () => (
   <div className="App">
     <Navbar />
     <Switch>
+      <Route path="/" exact>
+        <Landing />
+      </Route>
       <Route path="/viticulture">
         <Viticulture />
       </Route>
@@ -26,14 +29,14 @@ const App = () => (
       <Route path="/sonoma">
         <Sonoma />
       </Route>
-      <Route path="/" exact>
-        <Landing />
-      </Route>
       <Route path="/central-coast">
         <CentralCoast />
       </Route>
       <Route path="/pacific-northwest">
         <PacificNorthwest />
+      </Route>
+      <Route path="*">
+        <Redirect to="/" />
       </Route>
     </Switch>
   </div>

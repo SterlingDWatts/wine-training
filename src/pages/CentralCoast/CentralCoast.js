@@ -12,6 +12,7 @@ import PasoRobles from "../../assets/PasoRobles.png";
 import CarmelValley from "../../assets/CarmelValley.png";
 import SonomaSyrah from "../../assets/SonomaSyrah.png";
 import CentralCoastMap from "../../assets/CentralCoastMap.jpeg";
+import SBMap from "../../assets/SBmap.jpeg";
 import "./CentralCoast.css";
 
 const CentralCoast = () => {
@@ -21,6 +22,7 @@ const CentralCoast = () => {
   const ref4 = useRef(null);
   const ref5 = useRef(null);
   const ref6 = useRef(null);
+  const ref7 = useRef(null);
   return (
     <>
       <Page className="CentralCoast">
@@ -319,6 +321,10 @@ const CentralCoast = () => {
               <StudyImage src={CentralCoastMap} alt="Central Coast Map" />
             </Content>
           </StudyPage>
+          <StudyPage>
+            <h2 ref={ref7}>Santa Barbera County Map</h2>
+            <StudyImage src={SBMap} alt="Santa Barbera County Map" />
+          </StudyPage>
         </StudyGuide>
       </Page>
       <SideNav header="Central Coast">
@@ -328,6 +334,7 @@ const CentralCoast = () => {
         <SideNavLink reference={ref4}>Major Grape Varieties</SideNavLink>
         <SideNavLink reference={ref5}>Selling Central Coast Wines</SideNavLink>
         <SideNavLink reference={ref6}>Central Coast Map</SideNavLink>
+        <SideNavLink reference={ref7}>Santa Barbera County Map</SideNavLink>
       </SideNav>
     </>
   );
