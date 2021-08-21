@@ -8,6 +8,7 @@ import Content from "../../components/Content/Content";
 import ForYourInfo from "../../components/ForYourInfo/ForYourInfo";
 import StudyImage from "../../components/StudyImage/StudyImage";
 import BordeauxChateau from "../../assets/BordeauxChateau.png";
+import BordeauxMap from "../../assets/BordeauxMap.png";
 import "./Bordeaux.css";
 
 const Bordeaux = () => {
@@ -24,6 +25,7 @@ const Bordeaux = () => {
   const ref11 = useRef(null);
   const ref12 = useRef(null);
   const ref13 = useRef(null);
+  const ref14 = useRef(null);
   return (
     <>
       <Page className="Bordeaux">
@@ -34,20 +36,20 @@ const Bordeaux = () => {
             </header>
             <Content>
               <p>
-                The origins of the world’s modern ne wine market lie in southwestern France’s Gironde département, not
-                far from the Atlantic Ocean. The Bordeaux wine region takes its name from a city on the Garonne River,
-                which established itself as a major medieval port and a hub of the wine trade. Dutch merchant eets
-                carried Bordeaux wines across Europe in the middle of the last millennium, and the English have long
-                exhibited great thirst for claret—the red wines of Bordeaux.
+                The origins of the world’s modern fine wine market lie in southwestern France’s Gironde{" "}
+                <em>département</em>, not far from the Atlantic Ocean. The Bordeaux wine region takes its name from a
+                city on the Garonne River, which established itself as a major medieval port and a hub of the wine
+                trade. Dutch merchant fleets carried Bordeaux wines across Europe in the middle of the last millennium,
+                and the English have long exhibited great thirst for claret—the red wines of Bordeaux.
               </p>
               <p>
                 Bordeaux today is justly famous for its top red and sweet white wines, and mature vintages from fabled
-                estates have long been the backbone of serious collectors’ cellars and auction house oerings. But
-                Bordeaux oers more than wine for the wealthy. In ush vintages, Bordeaux makes almost a billion bottles
-                of wine, in every style—red, dry and sweet white, rosé and sparkling. Bordeaux is the largest region of
-                AOP production in France, encompassing more than fty individual wine appellations and nearly 120,000
-                hectares of vineyards. With so much focus on the high end, it’s easy to miss a vast amount of aordable
-                wines produced in the region.{" "}
+                estates have long been the backbone of serious collectors’ cellars and auction house offerings. But
+                Bordeaux offers more than wine for the wealthy. In flush vintages, Bordeaux makes almost a billion
+                bottles of wine, in every style—red, dry and sweet white, rosé and sparkling. Bordeaux is the largest
+                region of AOP production in France, encompassing more than fifty individual wine appellations and nearly
+                120,000 hectares of vineyards. With so much focus on the high end, it’s easy to miss a vast amount of
+                affordable wines produced in the region.
               </p>
               <StudyImage src={BordeauxChateau} alt="Bordeaux Chatuea" caption="Château Margaux" />
             </Content>
@@ -57,10 +59,10 @@ const Bordeaux = () => {
             <Content>
               <p>
                 Two rivers, the Garonne and the Dordogne, converge into the Gironde, a 50-mile-long, widening estuary
-                that ows northward into the Atlantic Ocean. Bordeaux’s wine regions line the banks of these rivers and
+                that flows northward into the Atlantic Ocean. Bordeaux’s wine regions line the banks of these rivers and
                 estuary. Bordeaux’s climate, moderated by its waterways and proximity to the coast, is mild, humid and
                 maritime—summers are warm but can be wet. Winter’s bite is blunted, but the threat of rainfall during
-                June owering and the September-October harvest is a frequent concern.
+                June flowering and the September-October harvest is a frequent concern.
               </p>
             </Content>
           </StudyPage>
@@ -108,7 +110,7 @@ const Bordeaux = () => {
                 </div>
               </ForYourInfo>
               <p>
-                When sommeliers speak of a “Bordeaux family” of grapes, it’s not just for ease of classication—many
+                When sommeliers speak of a “Bordeaux family” of grapes, it’s not just for ease of classification—many
                 really are related! Cabernet Franc and Sauvignon Blanc are the genetic parents of Cabernet Sauvignon.
                 Cabernet Franc is a parent of Merlot, and Malbec and Merlot are genetic half-siblings, with a common
                 mother, the very rare Magdeleine Noire des Charentes. Consequently, some produce wines with similar
@@ -182,7 +184,7 @@ const Bordeaux = () => {
                   Is Bordeaux <em>supérieur</em> really superior? Not necessarily! This appellation, introduced in 1943,
                   requires slightly reduced maximum yields and a higher minimum level of ripeness at harvest. This was
                   an important signifier of quality decades ago, but in the modern era <em>supérieur</em> levels of
-                  alcohol are easy to achieve. White wines labeled <em>supérieur</em> will be o-dry to semi-sweet.
+                  alcohol are easy to achieve. White wines labeled <em>supérieur</em> will be off-dry to semi-sweet.
                 </p>
               </ForYourInfo>
             </Content>
@@ -196,7 +198,7 @@ const Bordeaux = () => {
                 saltmarsh in the early 17th century. Dutch tradesmen and engineers arrived to drain the marshes,
                 revealing great beds of gravel that would become the preeminent home for Cabernet Sauvignon in France,
                 and the world. Soon, aristocratic and grandiose châteaux—manor houses—rose up in the Médoc, each with
-                its own vineyard. The greatest châteaux became emblems of fine wine—the first true “brands” of the wine
+                its own vineyard. The greatest châteaux became emblems of fine wine—the first true “brands” of the wine
                 world.
               </p>
               <p>
@@ -248,13 +250,13 @@ const Bordeaux = () => {
               <p>
                 The best properties are located in northern Graves—some sit amidst the suburbs of Bordeaux itself! And
                 the best red and dry white wines are typically labeled as Pessac-Léognan AOP, signifying northern
-                Graves, rather than Graves AOP. With a few exceptions, Pessac-Léognan reds often play second ddle to the
-                great Médoc reds, but without doubt the appellation produces the top dry whites in Bordeaux. Classically
-                aged in oak, these wines are creamy, herbal and textural; they are a luxurious step up in body and
-                richness from sharper styles of Sauvignon Blanc common in the Loire Valley.
+                Graves, rather than Graves AOP. With a few exceptions, Pessac-Léognan reds often play second fiddle to
+                the great Médoc reds, but without doubt the appellation produces the top dry whites in Bordeaux.
+                Classically aged in oak, these wines are creamy, herbal and textural; they are a luxurious step up in
+                body and richness from sharper styles of Sauvignon Blanc common in the Loire Valley.
               </p>
               <p>
-                At Graves’ far southern end, near the conuence of the Ciron and Garonne Rivers, are two important
+                At Graves’ far southern end, near the confluence of the Ciron and Garonne Rivers, are two important
                 destinations for sweet white wines, Sauternes and Barsac.
               </p>
             </Content>
@@ -269,14 +271,14 @@ const Bordeaux = () => {
               </p>
               <p>
                 <strong>Pomerol AOP:</strong> Wines from this small appellation exemplify French Merlot. The wines are
-                often lush and lavishly oaked, with avors of plum and chocolate. Traditional producers make wines with a
-                harder edge, but overall these are among Bordeaux’s richest, plumpest, and most extravagant wines.
+                often lush and lavishly oaked, with flavors of plum and chocolate. Traditional producers make wines with
+                a harder edge, but overall these are among Bordeaux’s richest, plumpest, and most extravagant wines.
               </p>
               <p>
                 <strong>Saint-Émilion AOP:</strong> Merlot and Cabernet Franc are both suited to the limestone, clay,
                 and gravel soils of Saint-Émilion. Merlot is predominant, but Cabernet Franc may account for almost half
-                the blend in some very good wines. Its spine rms up the sweetness of Merlot. Saint-Émilion is a much
-                larger appellation than Pomerol and oers a wider range of quality and style, from inexpensive, rustic
+                the blend in some very good wines. Its spine firms up the sweetness of Merlot. Saint-Émilion is a much
+                larger appellation than Pomerol and offers a wider range of quality and style, from inexpensive, rustic
                 and leathery to lavishly oaked, modern and ripe. Overall, the wines are a bit more rigid and less fat
                 than in Pomerol, but more mellow and round than Left Bank wines.
               </p>
@@ -319,17 +321,17 @@ const Bordeaux = () => {
                 dessert wines. Sémillon is the dominant grape in the sweet wines of these regions, supported by
                 Sauvignon Blanc and Muscadelle. In warm, humid, late summer afternoons the Botrytis cinerea (“noble
                 rot”) mold attacks the thin-skinned grapes, dehydrating them. The process naturally concentrates sugars
-                and adds avors of honey, dried apricot and saron to the nished wine. However, it does not aect bunches
-                evenly—vigilant Sauternes producers must send picking teams on multiple passes through the vineyard. The
-                laborious harvests and miniscule yields result in very expensive wines.
+                and adds flavors of honey, dried apricot and saffron to the finished wine. However, it does not affect
+                bunches evenly—vigilant Sauternes producers must send picking teams on multiple passes through the
+                vineyard. The laborious harvests and miniscule yields result in very expensive wines.
               </p>
               <p>
                 Good Sauternes has a golden hue that deepens with age; the wine is full-bodied, with thick viscosity and
                 a wealth of ripe and tropical fruit notes that grow savory over time. The top châteaux typically age
-                these wines in a high percentage of new oak barrels—the avors of botrytis mingle with the sweet spices
+                these wines in a high percentage of new oak barrels—the flavors of botrytis mingle with the sweet spices
                 and vanilla tones of oak in the wine. This ultimate luxury wine is a great pairing at the end of a meal
-                with fall fruit desserts and avors of honey, dried gs, gingerbread, hazelnut, and graham cracker. Plus,
-                it’s a classic pairing for both blue cheese and foie gras!
+                with fall fruit desserts and flavors of honey, dried figs, gingerbread, hazelnut, and graham cracker.
+                Plus, it’s a classic pairing for both blue cheese and foie gras!
               </p>
               <p>
                 Less expensive—but less luxurious—dessert wines are made in neighboring appellations like Cérons and
@@ -342,44 +344,44 @@ const Bordeaux = () => {
             <h2 ref={ref11}>Bordeaux Classifcations</h2>
             <Content>
               <p>
-                Bordeaux is famous for its many quality château classications. Unlike most other grand cru systems in
-                France, in which vineyards or villages are classied according to their relative potential, Bordeaux has
-                several means of classifying châteaux for the actual quality of their wines.
+                Bordeaux is famous for its many quality château classifications. Unlike most other grand cru systems in
+                France, in which vineyards or villages are classified according to their relative potential, Bordeaux
+                has several means of classifying châteaux for the actual quality of their wines.
               </p>
               <p>
-                Bordeaux’s most famous, enduring, and debated classication dates to 1855. Napoléon III commissioned a
+                Bordeaux’s most famous, enduring, and debated classification dates to 1855. Napoléon III commissioned a
                 ranking of Bordeaux’s top châteaux in advance of the Universal Exposition in Paris, a cultural
                 celebration that would draw tourists from across Europe and the globe. Bordeaux’s merchants assembled
-                the rankings by price, and classied dry red wines of the Médoc—and one from Graves—in ve crus, while
-                making a separate list of sweet white wines. Four “rst growths” were born—Châteaux Late-Rothschild,
+                the rankings by price, and classified dry red wines of the Médoc—and one from Graves—in five crus, while
+                making a separate list of sweet white wines. Four “first growths” were born—Châteaux Lafite-Rothschild,
                 Latour, Margaux, and Haut-Brion—and one Sauternes wine, Château d’Yquem, was accorded honor as premier
-                cru supérieur, a wine without equal. The 1855 classication is still in place today, and only one
-                signicant change has occurred in over 150 years: in 1973 Château Mouton-Rothschild ascended from second
-                growth to rst. Reimagining the classication today is a popular sport amongst wine writers, as there are
-                over- and underperformers in most crus. The reputations (and prices) of all ve rst growths remain high.
-                Châteaux at lower tiers that consistently produce superb wines are termed “super seconds.”
+                cru supérieur, a wine without equal. The 1855 classification is still in place today, and only one
+                significant change has occurred in over 150 years: in 1973 Château Mouton-Rothschild ascended from
+                second growth to first. Reimagining the classification today is a popular sport amongst wine writers, as
+                there are over- and underperformers in most crus. The reputations (and prices) of all five first growths
+                remain high. Châteaux at lower tiers that consistently produce superb wines are termed “super seconds.”
               </p>
               <p>
                 Saint-Émilion ranks its top producers as either grand cru classé or as premier grand cru classé; unlike
-                the 1855 classication this is re-evaluated about once a decade and is based on reputation and a tasting
-                of the wines. (New evaluations are, as may be expected, the subject of frequent lawsuits from devalued
-                châteaux.) Graves has its own list of grand cru classé red and white wines. Pomerol is the only top
-                appellation that lacks a classication system.{" "}
+                the 1855 classification this is re-evaluated about once a decade and is based on reputation and a
+                tasting of the wines. (New evaluations are, as may be expected, the subject of frequent lawsuits from
+                devalued châteaux.) Graves has its own list of grand cru classé red and white wines. Pomerol is the only
+                top appellation that lacks a classification system.
               </p>
               <ForYourInfo backgroundColor="green">
                 <h3 style={{ textAlign: "center" }}>Grand Vin & Second Wines</h3>
                 <p>
                   In modern Bordeaux, an estate produces a single grand vin—a château’s signature wine—but it may also
-                  produce a number of other wines. Almost all classied estates in the Médoc and Graves produce “second
+                  produce a number of other wines. Almost all classified estates in the Médoc and Graves produce “second
                   wines,” released at lower prices than grands vins. A second wine may be the product of young vines, or
-                  of fruit deemed unt for the grand vin. Whole vineyard parcels may be planted solely to produce a
+                  of fruit deemed unfit for the grand vin. Whole vineyard parcels may be planted solely to produce a
                   second wine. Second wines are generally more approachable, and even on the Left Bank they often
                   contain more Merlot than a grand vin.
                 </p>
                 <p>
                   A grand vin is almost always labeled traditionally, under the picture and name of the producing
-                  château. Second wines often have more fanciful names, sometimes paying homage to historical gures or
-                  famous landmarks important to the château.{" "}
+                  château. Second wines often have more fanciful names, sometimes paying homage to historical figures or
+                  famous landmarks important to the château.
                 </p>
               </ForYourInfo>
             </Content>
@@ -390,9 +392,9 @@ const Bordeaux = () => {
               <p>
                 It pays to know a little about Bordeaux vintages—wine-savvy guests have likely read a few vintage
                 reports and seen the latest “vintage of the century” headlines. Top recent vintages (think 2005, 2009 or
-                2010) are usually the product of warm growing seasons, with ripe and powerful wines. These vintages oer
-                more appeal to fans of California Cabernet and Merlot looking to experience a European wine. For more
-                classically styled wines (and better bargains), look to the cooler years!
+                2010) are usually the product of warm growing seasons, with ripe and powerful wines. These vintages
+                offer more appeal to fans of California Cabernet and Merlot looking to experience a European wine. For
+                more classically styled wines (and better bargains), look to the cooler years!
               </p>
             </Content>
           </StudyPage>
@@ -402,21 +404,21 @@ const Bordeaux = () => {
               <p>
                 Make no mistake, the most prestigious Bordeaux wines are expensive! Prices for top estates have been
                 sky-high in recent years on the strength of several highly applauded vintages and the evolving Asian
-                market. Late-Rothschild, Latour, and d’Yquem are trophy wines, not likely to be included in a
+                market. Lafite-Rothschild, Latour, and d’Yquem are trophy wines, not likely to be included in a
                 sommelier’s opening tableside salvo. But there are good Bordeaux wines at every price point.
               </p>
               <p>
-                Bordeaux has a long association with the culture of ne dining. Serving red Bordeaux with beef and the
+                Bordeaux has a long association with the culture of fine dining. Serving red Bordeaux with beef and the
                 red wine-based Bordelaise sauce is an obvious pairing, but consider it with duck as well. With age, its
-                avors harmonize with mushrooms and trues. Dry white Bordeaux is underutilized at the table—try it in
-                place of Chardonnay with a rich poultry or sh course accented with strong herbs. And sell that glass of
-                Sauternes with an appropriate foie gras starter, strong cheese course, or dessert! It’s a little sip of
-                luxury for the guest, and the simple act of regular suggestion will net sales.
+                flavors harmonize with mushrooms and truffles. Dry white Bordeaux is underutilized at the table—try it
+                in place of Chardonnay with a rich poultry or fish course accented with strong herbs. And sell that
+                glass of Sauternes with an appropriate foie gras starter, strong cheese course, or dessert! It’s a
+                little sip of luxury for the guest, and the simple act of regular suggestion will net sales.
               </p>
               <p>
                 Bordeaux provides a great gateway to the Old World for the California Cabernet, Merlot, or Sauvignon
-                Blanc drinker. You can keep the guest in his or her comfort zone while still oering a new experience, an
-                earthier style of wine. Fans of rich and generous Napa Valley Merlot may nd something to love in
+                Blanc drinker. You can keep the guest in his or her comfort zone while still offering a new experience,
+                an earthier style of wine. Fans of rich and generous Napa Valley Merlot may find something to love in
                 Pomerol, while Entre-Deux-Mers can be a good transition, in style and price, from New Zealand Sauvignon
                 Blanc. For young Cabernet Sauvignon fans, sell a ripe Left Bank Bordeaux of similar age, when the wine
                 is still dominated by tannin and oak. Red Bordeaux lists are an area wherein a restaurant can assemble
@@ -425,12 +427,18 @@ const Bordeaux = () => {
               </p>
               <p>
                 The region has so much storied history, and its name is instantly recognizable—you just have to
-                understand what you are selling. Learn the story and prole of your product! Wine-savvy guests may
-                already understand classic appellation proles for Bordeaux—take a little time to learn how your Pauillac
-                aligns with or veers from the classic Pauillac prole. While most sommeliers memorize Bordeaux
-                classications, to sell classied wines it is less important to know whether the wine is a third growth or
-                a fth growth, and more important to know if it’s a fth growth drinking like a third.
+                understand what you are selling. Learn the story and profile of your product! Wine-savvy guests may
+                already understand classic appellation profiles for Bordeaux—take a little time to learn how your
+                Pauillac aligns with or veers from the classic Pauillac profile. While most sommeliers memorize Bordeaux
+                classifications, to sell classified wines it is less important to know whether the wine is a third
+                growth or a fifth growth, and more important to know if it’s a fifth growth drinking like a third.
               </p>
+            </Content>
+          </StudyPage>
+          <StudyPage>
+            <h2 ref={ref14}>Bordeaux Map</h2>
+            <Content>
+              <StudyImage src={BordeauxMap} alt="Bordeaux Map" />
             </Content>
           </StudyPage>
         </StudyGuide>
@@ -449,6 +457,7 @@ const Bordeaux = () => {
         <SideNavLink reference={ref11}>Bordeaux Classifcations</SideNavLink>
         <SideNavLink reference={ref12}>Bordeaux Vintages</SideNavLink>
         <SideNavLink reference={ref13}>Selling Bordeaux</SideNavLink>
+        <SideNavLink reference={ref14}>Bordeaux Map</SideNavLink>
       </SideNav>
     </>
   );

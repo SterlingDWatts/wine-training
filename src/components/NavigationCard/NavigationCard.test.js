@@ -9,7 +9,7 @@ describe("NavigationCard Component", () => {
     const div = document.createElement("div");
     ReactDOM.render(
       <BrowserRouter>
-        <NavigationCard to="/atlas" src={AtlasPeak} alt="Atlas Peak">
+        <NavigationCard title="Atlas" extra="Study Guide | Winemaking" to="/atlas" src={AtlasPeak} alt="Atlas Peak">
           Test
         </NavigationCard>
       </BrowserRouter>,
