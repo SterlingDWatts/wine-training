@@ -1,31 +1,39 @@
 .NavigationCard {
-  margin: 16px;
-  border: 1px solid #e2e2e2;
-  border-radius: 10px;
-  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 20%);
+  margin: 0 16px;
+  padding: 16px 0;
   overflow: hidden;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
 }
 
 .NavigationCard a {
   text-decoration: none;
   color: black;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 16px;
 }
 
 .NavigationCard div.container {
-  height: 100%;
   width: 100%;
+  display: flex;
 }
 
 .NavigationCard img {
-  width: 100%;
+  width: 90px;
+  border-radius: 4px;
 }
 
 .NavigationCard div.text {
-  padding: 16px;
+  padding: 0 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .NavigationCard .title {
   text-align: center;
+}
+
+.NavigationCard .extra {
+  font-size: 10px;
 }

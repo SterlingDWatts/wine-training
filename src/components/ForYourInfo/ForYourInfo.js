@@ -2,8 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./ForYourInfo.css";
 
-const ForYourInfo = ({ children, backgroundColor }) => (
-  <div className={`ForYourInfo ${backgroundColor}`}>{children}</div>
+const ForYourInfo = ({ children, backgroundColor, ...props }) => (
+  <div className={`ForYourInfo ${backgroundColor}`} {...props}>
+    {children}
+  </div>
 );
 
 ForYourInfo.propTypes = {

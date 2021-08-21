@@ -77,8 +77,11 @@ const Navbar = () => {
             <Link to="/central-coast" onClick={hideSubnav}>
               <span>Central Coast</span>
             </Link>
-            <Link to="pacific-northwest" onClick={hideSubnav}>
+            <Link to="/pacific-northwest" onClick={hideSubnav}>
               <span>Pacific Northwest</span>
+            </Link>
+            <Link to="/bordeaux" onClick={hideSubnav}>
+              <span>Bordeaux</span>
             </Link>
           </div>
         </div>

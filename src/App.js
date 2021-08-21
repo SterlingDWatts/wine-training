@@ -8,6 +8,7 @@ import Napa from "./pages/Napa/Napa";
 import Sonoma from "./pages/Sonoma/Sonoma";
 import CentralCoast from "./pages/CentralCoast/CentralCoast";
 import PacificNorthwest from "./pages/PacificNorthwest/PacificNorthwest";
+import Bordeaux from "./pages/Bordeaux/Bordeaux";
 import "./App.css";
 
 const App = () => (
@@ -34,6 +35,9 @@ const App = () => (
       </Route>
       <Route path="/pacific-northwest">
         <PacificNorthwest />
+      </Route>
+      <Route path="/bordeaux">
+        <Bordeaux />
       </Route>
       <Route path="*">
         <Redirect to="/" />
