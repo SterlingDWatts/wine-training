@@ -89,7 +89,7 @@ const Landing = () => {
           title="Rhône Valley"
           extra="Study Guide | France - Rhône Valley"
           src={RhoneValleyThumb}
-          atl="Vineyard in Rhone"
+          alt="Vineyard in Rhone"
           to="/study-guide/france/rhone-valley"
           onClick={navigateToTop}
         />
