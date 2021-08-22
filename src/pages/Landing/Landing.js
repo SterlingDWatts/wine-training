@@ -9,6 +9,7 @@ import CentralCoastVineyardThumb from "../../assets/CentralCoastVineyardThumb.pn
 import PacificNorthwestVineyard from "../../assets/PacificNorthwestVineyardThumbnail.png";
 import BordeauxChatueaThumb from "../../assets/BordeauxChateauThumb.png";
 import BurgundyVineyard from "../../assets/BurgundyThumb.png";
+import RhoneValleyThumb from "../../assets/RhoneValleyVineyardThumb.png";
 import "./Landing.css";
 
 const Landing = () => {
@@ -82,6 +83,14 @@ const Landing = () => {
           src={BurgundyVineyard}
           alt="Vineyard in Burgundy"
           to="/study-guide/france/burgundy"
+          onClick={navigateToTop}
+        />
+        <NavigationCard
+          title="Rhône Valley"
+          extra="Study Guide | France - Rhône Valley"
+          src={RhoneValleyThumb}
+          atl="Vineyard in Rhone"
+          to="/study-guide/france/rhone-valley"
           onClick={navigateToTop}
         />
       </nav>

@@ -86,6 +86,9 @@ const Navbar = () => {
             <Link to="/study-guide/france/burgundy" onClick={hideSubnav}>
               <span>Burgundy</span>
             </Link>
+            <Link to="/study-guide/france/rhone-valley" onClick={hideSubnav}>
+              <span>Rhône Valley</span>
+            </Link>
           </div>
         </div>
       </nav>
