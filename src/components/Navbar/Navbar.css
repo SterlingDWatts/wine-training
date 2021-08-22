@@ -67,10 +67,12 @@
   transition: color 0.6s;
 }
 
-.Navbar nav.subnav .section span {
+.Navbar nav.subnav .section a > div {
   font-weight: 400;
   font-style: normal;
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   text-decoration: none;
   font-size: 16px;
   line-height: 32px;
@@ -79,7 +81,7 @@
   color: #595959;
 }
 
-.Navbar nav.subnav .section span:hover {
+.Navbar nav.subnav .section a > div:hover {
   text-decoration: underline;
   color: #551a8b;
 }

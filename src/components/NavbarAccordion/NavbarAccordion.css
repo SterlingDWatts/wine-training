@@ -1,0 +1,19 @@
+.NavbarAccordion {
+  color: #595959;
+}
+
+.NavbarAccordion .main {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavbarAccordion .main:hover {
+  text-decoration: underline;
+  color: #551a8b;
+}
+
+.NavbarAccordion .children {
+  padding-left: 16px;
+}

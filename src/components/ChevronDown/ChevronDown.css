@@ -1,4 +1,4 @@
-.Hamburger {
+.ChevronDown {
   cursor: pointer;
   display: block;
   display: flex;
@@ -7,8 +7,20 @@
   z-index: 999;
 }
 
-button.Hamburger {
+button.ChevronDown {
   padding: 0;
   border: none;
   background-color: #ffffff00;
+}
+
+.ChevronDown svg {
+  transition: all 0.6s;
+}
+
+.ChevronDown svg:hover {
+  color: #551a8b;
+}
+
+.ChevronDown.rotate svg {
+  transform: rotate(180deg);
 }
