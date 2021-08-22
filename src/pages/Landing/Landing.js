@@ -8,6 +8,7 @@ import SonomaFieldThumb from "../../assets/SonomaFieldThumb.png";
 import CentralCoastVineyardThumb from "../../assets/CentralCoastVineyardThumb.png";
 import PacificNorthwestVineyard from "../../assets/PacificNorthwestVineyard.png";
 import BordeauxChatueaThumb from "../../assets/BordeauxChateauThumb.png";
+import BurgundyVineyard from "../../assets/BurgundyThumb.png";
 import "./Landing.css";
 
 const Landing = () => {
@@ -24,7 +25,7 @@ const Landing = () => {
           extra="Study Guide | Viticulture"
           src={ViticultureThumb}
           alt="Red grapes"
-          to="/viticulture"
+          to="/study-guide/viticulture"
           onClick={navigateToTop}
         />
         <NavigationCard
@@ -32,7 +33,7 @@ const Landing = () => {
           extra="Study Guide | Winemaking"
           src={WhiteGrapesThumb}
           alt="White grapes"
-          to="/winemaking"
+          to="/study-guide/winemaking"
           onClick={navigateToTop}
         />
         <NavigationCard
@@ -40,7 +41,7 @@ const Landing = () => {
           extra="Study Guide | USA - Napa Valley"
           src={NapaValleyThumb}
           alt="Napa Valley"
-          to="/napa"
+          to="/study-guide/usa/napa"
           onClick={navigateToTop}
         />
         <NavigationCard
@@ -48,7 +49,7 @@ const Landing = () => {
           extra="Study Guide | USA - Sonoma"
           src={SonomaFieldThumb}
           alt="Sonoma County Vineyard"
-          to="/sonoma"
+          to="/study-guide/usa/sonoma"
           onClick={navigateToTop}
         />
         <NavigationCard
@@ -56,7 +57,7 @@ const Landing = () => {
           extra="Study Guide | USA - Central Coast"
           src={CentralCoastVineyardThumb}
           alt="Central Coast Vineyard"
-          to="/central-coast"
+          to="/study-guide/usa/central-coast"
           onClick={navigateToTop}
         />
         <NavigationCard
@@ -64,7 +65,7 @@ const Landing = () => {
           extra="Study Guide | USA - Pacific Northwest"
           src={PacificNorthwestVineyard}
           alt="Pacific Northwest Vineyard"
-          to="/pacific-northwest"
+          to="/study-guide/usa/pacific-northwest"
           onClick={navigateToTop}
         />
         <NavigationCard
@@ -72,7 +73,15 @@ const Landing = () => {
           extra="Study Guide | France - Bordeaux"
           src={BordeauxChatueaThumb}
           alt="Château Margaux"
-          to="/bordeaux"
+          to="/study-guide/france/bordeaux"
+          onClick={navigateToTop}
+        />
+        <NavigationCard
+          title="Burgundy"
+          extra="Study Guide | France - Burgundy"
+          src={BurgundyVineyard}
+          alt="Vineyard in Burgundy"
+          to="/study-guide/france/burgundy"
           onClick={navigateToTop}
         />
       </nav>

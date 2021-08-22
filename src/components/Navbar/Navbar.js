@@ -62,26 +62,29 @@ const Navbar = () => {
       >
         <div className="container">
           <div className="section">
-            <Link to="/viticulture" onClick={hideSubnav}>
+            <Link to="/study-guide/viticulture" onClick={hideSubnav}>
               <span>Viticulture</span>
             </Link>
-            <Link to="/winemaking" onClick={hideSubnav}>
+            <Link to="/study-guide/winemaking" onClick={hideSubnav}>
               <span>Winemaking</span>
             </Link>
-            <Link to="/napa" onClick={hideSubnav}>
+            <Link to="/study-guide/usa/napa" onClick={hideSubnav}>
               <span>Napa Valley</span>
             </Link>
-            <Link to="/sonoma" onClick={hideSubnav}>
+            <Link to="/study-guide/usa/sonoma" onClick={hideSubnav}>
               <span>Sonoma</span>
             </Link>
-            <Link to="/central-coast" onClick={hideSubnav}>
+            <Link to="/study-guide/usa/central-coast" onClick={hideSubnav}>
               <span>Central Coast</span>
             </Link>
-            <Link to="/pacific-northwest" onClick={hideSubnav}>
+            <Link to="/study-guide/usa/pacific-northwest" onClick={hideSubnav}>
               <span>Pacific Northwest</span>
             </Link>
-            <Link to="/bordeaux" onClick={hideSubnav}>
+            <Link to="/study-guide/france/bordeaux" onClick={hideSubnav}>
               <span>Bordeaux</span>
+            </Link>
+            <Link to="/study-guide/france/burgundy" onClick={hideSubnav}>
+              <span>Burgundy</span>
             </Link>
           </div>
         </div>

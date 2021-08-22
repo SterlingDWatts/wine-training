@@ -9,6 +9,7 @@ import Sonoma from "./pages/Sonoma/Sonoma";
 import CentralCoast from "./pages/CentralCoast/CentralCoast";
 import PacificNorthwest from "./pages/PacificNorthwest/PacificNorthwest";
 import Bordeaux from "./pages/Bordeaux/Bordeaux";
+import Burgundy from "./pages/Burgundy/Burgundy";
 import "./App.css";
 
 const App = () => (
@@ -18,26 +19,29 @@ const App = () => (
       <Route path="/" exact>
         <Landing />
       </Route>
-      <Route path="/viticulture">
+      <Route path="/study-guide/viticulture">
         <Viticulture />
       </Route>
-      <Route path="/winemaking">
+      <Route path="/study-guide/winemaking">
         <Winemaking />
       </Route>
-      <Route path="/napa">
+      <Route path="/study-guide/usa/napa">
         <Napa />
       </Route>
-      <Route path="/sonoma">
+      <Route path="/study-guide/usa/sonoma">
         <Sonoma />
       </Route>
-      <Route path="/central-coast">
+      <Route path="/study-guide/usa/central-coast">
         <CentralCoast />
       </Route>
-      <Route path="/pacific-northwest">
+      <Route path="/study-guide/usa/pacific-northwest">
         <PacificNorthwest />
       </Route>
-      <Route path="/bordeaux">
+      <Route path="/study-guide/france/bordeaux">
         <Bordeaux />
+      </Route>
+      <Route path="/study-guide/france/burgundy">
+        <Burgundy />
       </Route>
       <Route path="*">
         <Redirect to="/" />
