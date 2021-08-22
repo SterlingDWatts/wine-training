@@ -3,8 +3,9 @@ import { Link, useRouteMatch } from "react-router-dom";
 import classnames from "classnames";
 import useScroll from "../../hooks/useScroll";
 import Hamburger from "../Hamburger/Hamburger";
-import CloseButton from "../CloseButton/CloseButton";
+import Times from "../Times/Times";
 import "./Navbar.css";
+import NavbarAccordion from "../NavbarAccordion/NavbarAccordion";
 
 const Navbar = () => {
   const [showNav, atTop] = useScroll();
@@ -52,7 +53,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="right">
-          {!showSubnav ? <Hamburger handleClick={toggleSubnav} /> : <CloseButton handleClick={toggleSubnav} />}
+          {!showSubnav ? <Hamburger handleClick={toggleSubnav} /> : <Times handleClick={toggleSubnav} />}
         </div>
       </nav>
       <nav
@@ -63,32 +64,36 @@ const Navbar = () => {
         <div className="container">
           <div className="section">
             <Link to="/study-guide/viticulture" onClick={hideSubnav}>
-              <span>Viticulture</span>
+              <div>Viticulture</div>
             </Link>
             <Link to="/study-guide/winemaking" onClick={hideSubnav}>
-              <span>Winemaking</span>
+              <div>Winemaking</div>
             </Link>
-            <Link to="/study-guide/usa/napa" onClick={hideSubnav}>
-              <span>Napa Valley</span>
-            </Link>
-            <Link to="/study-guide/usa/sonoma" onClick={hideSubnav}>
-              <span>Sonoma</span>
-            </Link>
-            <Link to="/study-guide/usa/central-coast" onClick={hideSubnav}>
-              <span>Central Coast</span>
-            </Link>
-            <Link to="/study-guide/usa/pacific-northwest" onClick={hideSubnav}>
-              <span>Pacific Northwest</span>
-            </Link>
-            <Link to="/study-guide/france/bordeaux" onClick={hideSubnav}>
-              <span>Bordeaux</span>
-            </Link>
-            <Link to="/study-guide/france/burgundy" onClick={hideSubnav}>
-              <span>Burgundy</span>
-            </Link>
-            <Link to="/study-guide/france/rhone-valley" onClick={hideSubnav}>
-              <span>Rhône Valley</span>
-            </Link>
+            <NavbarAccordion title="USA">
+              <Link to="/study-guide/usa/napa" onClick={hideSubnav}>
+                <div>Napa Valley</div>
+              </Link>
+              <Link to="/study-guide/usa/sonoma" onClick={hideSubnav}>
+                <div>Sonoma</div>
+              </Link>
+              <Link to="/study-guide/usa/central-coast" onClick={hideSubnav}>
+                <div>Central Coast</div>
+              </Link>
+              <Link to="/study-guide/usa/pacific-northwest" onClick={hideSubnav}>
+                <div>Pacific Northwest</div>
+              </Link>
+            </NavbarAccordion>
+            <NavbarAccordion title="France">
+              <Link to="/study-guide/france/bordeaux" onClick={hideSubnav}>
+                <div>Bordeaux</div>
+              </Link>
+              <Link to="/study-guide/france/burgundy" onClick={hideSubnav}>
+                <div>Burgundy</div>
+              </Link>
+              <Link to="/study-guide/france/rhone-valley" onClick={hideSubnav}>
+                <div>Rhône Valley</div>
+              </Link>
+            </NavbarAccordion>
           </div>
         </div>
       </nav>
