@@ -6,7 +6,7 @@ import ViticultureThumb from "../../assets/ViticultureThumb.png";
 import NapaValleyThumb from "../../assets/NapaValleyThumb.png";
 import SonomaFieldThumb from "../../assets/SonomaFieldThumb.png";
 import CentralCoastVineyardThumb from "../../assets/CentralCoastVineyardThumb.png";
-import PacificNorthwestVineyard from "../../assets/PacificNorthwestVineyard.png";
+import PacificNorthwestVineyard from "../../assets/PacificNorthwestVineyardThumbnail.png";
 import BordeauxChatueaThumb from "../../assets/BordeauxChateauThumb.png";
 import BurgundyVineyard from "../../assets/BurgundyThumb.png";
 import "./Landing.css";
@@ -18,7 +18,7 @@ const Landing = () => {
 
   return (
     <div className="Landing">
-      <img src={Quintessa} alt="Quintessa" width="100%" />
+      <img src={Quintessa} alt="Quintessa" className="hero" />
       <nav>
         <NavigationCard
           title="Viticulture"

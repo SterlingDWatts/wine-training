@@ -7,9 +7,11 @@ import StudyPage from "../../components/StudyPage/StudyPage";
 import Content from "../../components/Content/Content";
 import StudyImage from "../../components/StudyImage/StudyImage";
 import BurgundyImage from "../../assets/Burgundy.png";
-import BurgundyChablisMap from "../../assets/BurgundyChablisMap.png";
+import BurgundyChablisMap from "../../assets/BurgundyChablisMap.jpeg";
 import BurgundyNuitsMap from "../../assets/BurgundyNuitsMap.png";
 import BurgundyBeauneMap from "../../assets/BurgundyBeauneMap.png";
+import BurgundyMap from "../../assets/BurgundyMap.jpeg";
+import BurgundyMacconaiseMap from "../../assets/BurgundyMaconnaisAndBeaujolaisMap.jpeg";
 import "./Burgundy.css";
 
 const Burgundy = () => {
@@ -26,6 +28,8 @@ const Burgundy = () => {
   const ref11 = useRef(null);
   const ref12 = useRef(null);
   const ref13 = useRef(null);
+  const ref14 = useRef(null);
+  const ref15 = useRef(null);
   return (
     <>
       <Page className="Burgundy">
@@ -328,6 +332,18 @@ const Burgundy = () => {
               </p>
             </Content>
           </StudyPage>
+          <StudyPage>
+            <h2 ref={ref14}>Burgundy Map</h2>
+            <Content>
+              <StudyImage src={BurgundyMap} alt="Burgundy Map" />
+            </Content>
+          </StudyPage>
+          <StudyPage>
+            <h2 ref={ref15}>Mâconnais and Beaujolais Map</h2>
+            <Content>
+              <StudyImage src={BurgundyMacconaiseMap} alt="Mâconnais and Beaujolais Map" />
+            </Content>
+          </StudyPage>
         </StudyGuide>
       </Page>
       <SideNav header="Burgundy">
@@ -344,6 +360,8 @@ const Burgundy = () => {
         <SideNavLink reference={ref11}>Côte de Beaune Map</SideNavLink>
         <SideNavLink reference={ref12}>Types of Producers: Domaine vs. Négociant</SideNavLink>
         <SideNavLink reference={ref13}>Selling the Wines of Burgundy</SideNavLink>
+        <SideNavLink reference={ref14}>Burgundy Map</SideNavLink>
+        <SideNavLink reference={ref15}>Mâconnais and Beaujolais Map</SideNavLink>
       </SideNav>
     </>
   );
