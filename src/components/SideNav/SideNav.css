@@ -26,7 +26,7 @@
 
 .SideNav button.outline {
   position: absolute;
-  left: 261px;
+  left: 316px;
   top: calc(100vh / 2);
   display: flex;
   justify-content: center;
@@ -63,4 +63,14 @@
   padding-top: 8.889px;
   padding-bottom: 8.889px;
   text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  .SideNav nav {
+    width: 335px;
+  }
+
+  .SideNav.sidenav--hidden {
+    left: -335px;
+  }
 }
