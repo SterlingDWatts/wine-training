@@ -79,6 +79,11 @@
   color: #595959;
 }
 
+.Navbar nav.subnav .section span:hover {
+  text-decoration: underline;
+  color: #551a8b;
+}
+
 .Navbar.navbar--clear,
 .Navbar.navbar--clear nav.main-navigation,
 .Navbar.navbar--clear nav.subnav {

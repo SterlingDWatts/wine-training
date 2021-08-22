@@ -63,6 +63,11 @@
   padding-top: 8.889px;
   padding-bottom: 8.889px;
   text-align: center;
+  cursor: pointer;
+}
+
+.SideNav .title:hover {
+  color: #551a8b;
 }
 
 @media screen and (min-width: 375px) {
