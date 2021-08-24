@@ -11,6 +11,7 @@ import PacificNorthwest from "./pages/PacificNorthwest/PacificNorthwest";
 import Bordeaux from "./pages/Bordeaux/Bordeaux";
 import Burgundy from "./pages/Burgundy/Burgundy";
 import RhoneValley from "./pages/RhoneValley/RhoneValley";
+import LoireValley from "./pages/LoireValley/LoireValley";
 import "./App.css";
 
 const App = () => (
@@ -46,6 +47,9 @@ const App = () => (
       </Route>
       <Route path="/study-guide/france/rhone-valley">
         <RhoneValley />
+      </Route>
+      <Route path="/study-guide/france/loire-valley">
+        <LoireValley />
       </Route>
       <Route path="*">
         <Redirect to="/" />

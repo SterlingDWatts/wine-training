@@ -93,6 +93,9 @@ const Navbar = () => {
               <Link to="/study-guide/france/rhone-valley" onClick={hideSubnav}>
                 <div>Rhône Valley</div>
               </Link>
+              <Link to="/study-guide/france/loire-valley" onClick={hideSubnav}>
+                <div>The Loire Valley</div>
+              </Link>
             </NavbarAccordion>
           </div>
         </div>
