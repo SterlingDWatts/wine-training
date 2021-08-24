@@ -16,7 +16,7 @@ import OregonMap from "../../assets/OregonMap.png";
 import WashingtonMap from "../../assets/WashingtonMap.jpg";
 import "./PacificNorthwest.css";
 
-const PacificNorthwest = () => {
+const PacificNorthwest: React.FC = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);

@@ -3,7 +3,12 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import "./SideNav.css";
 
-const SideNav = ({ header, children }) => {
+interface SideNavProps {
+  header: string;
+  children: any;
+}
+
+const SideNav: React.FC<SideNavProps> = ({ header, children }) => {
   const [showSideNav, setShowSideNav] = useState(false);
 
   const toggleSideNav = () => {

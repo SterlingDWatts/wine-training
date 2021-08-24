@@ -3,7 +3,16 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./NavigationCard.css";
 
-const NavigationCard = ({ to, src, alt, extra, title, ...props }) => (
+interface NavigationCardProps {
+  to: string;
+  src: string;
+  alt: string;
+  extra: string;
+  title: string;
+  onClick: () => void;
+}
+
+const NavigationCard: React.FC<NavigationCardProps> = ({ to, src, alt, extra, title, ...props }) => (
   <div className="NavigationCard" {...props}>
     <Link to={to}>
       <div className="container">

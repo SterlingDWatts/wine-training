@@ -16,7 +16,7 @@ import Batonnage from "../../assets/Batonnage.png";
 import WineService from "../../assets/WineService.png";
 import "./Winemaking.css";
 
-const Winemaking = () => {
+const Winemaking: React.FC = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);

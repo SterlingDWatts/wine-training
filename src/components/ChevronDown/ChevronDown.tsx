@@ -2,7 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./ChevronDown.css";
 
-const ChevronDown = ({ showContents }) => {
+interface ChevronDownProps {
+  showContents: boolean;
+}
+
+const ChevronDown: React.FC<ChevronDownProps> = ({ showContents }) => {
   return (
     <button className={showContents ? "ChevronDown rotate" : "ChevronDown"}>
       <svg

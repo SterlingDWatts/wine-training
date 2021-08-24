@@ -11,7 +11,7 @@ import BordeauxChateau from "../../assets/BordeauxChateau.png";
 import BordeauxMap from "../../assets/BordeauxMap.png";
 import "./Bordeaux.css";
 
-const Bordeaux = () => {
+const Bordeaux: React.FC = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);

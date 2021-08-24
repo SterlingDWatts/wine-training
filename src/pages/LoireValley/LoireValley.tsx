@@ -12,7 +12,7 @@ import TouraineMap from "../../assets/Touraine.jpeg";
 import CentralVineyardsMap from "../../assets/CentralVineyards.jpeg";
 import "./LoireValley.css";
 
-const LoireValley = () => {
+const LoireValley: React.FC = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);

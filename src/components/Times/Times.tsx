@@ -2,7 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Times.css";
 
-const Times = ({ handleClick }) => (
+interface TimesProps {
+  handleClick: () => void;
+}
+
+const Times: React.FC<TimesProps> = ({ handleClick }) => (
   <button className="Times" onClick={handleClick}>
     <svg
       height="18px"

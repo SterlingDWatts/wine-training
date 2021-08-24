@@ -3,7 +3,12 @@ import PropTypes from "prop-types";
 import classnames from "classnames";
 import "./SideNavLink.css";
 
-const SideNavLink = ({ reference, children }) => {
+interface SideNavLinkProps {
+  reference: React.MutableRefObject<any>;
+  children: any;
+}
+
+const SideNavLink: React.FC<SideNavLinkProps> = ({ reference, children }) => {
   const [isRefVisible, setIsRefVisible] = useState(false);
   const [prevScroll, setPrevScroll] = useState(window.pageYOffset);
 
@@ -48,9 +53,12 @@ const SideNavLink = ({ reference, children }) => {
 SideNavLink.propTypes = {
   reference: PropTypes.shape({
     current: PropTypes.shape({
-      parentElement: PropTypes.shape({ offsetTop: PropTypes.number, clientHeight: PropTypes.number }),
-    }),
-  }),
+      parentElement: PropTypes.shape({
+        offsetTop: PropTypes.number.isRequired,
+        clientHeight: PropTypes.number.isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
   children: PropTypes.string.isRequired,
 };
 
