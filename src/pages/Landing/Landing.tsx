@@ -11,6 +11,7 @@ import BordeauxChatueaThumb from "../../assets/BordeauxChateauThumb.png";
 import BurgundyVineyard from "../../assets/BurgundyThumb.png";
 import RhoneValleyThumb from "../../assets/RhoneValleyVineyardThumb.png";
 import LoireValleyThumb from "../../assets/LoireValleyThumb.png";
+import AlsaceThumb from "../../assets/AlsaceVineyardThumb.jpeg";
 import "./Landing.css";
 
 const Landing: React.FC = () => {
@@ -100,6 +101,14 @@ const Landing: React.FC = () => {
           src={LoireValleyThumb}
           alt="Loire Valley"
           to="/study-guide/france/loire-valley"
+          onClick={navigateToTop}
+        />
+        <NavigationCard
+          title="Alsace"
+          extra="Study Guide | France - Alsace"
+          src={AlsaceThumb}
+          alt="Alsace Vineyard"
+          to="/study-guide/france/alsace"
           onClick={navigateToTop}
         />
       </nav>

@@ -98,7 +98,7 @@ const Alsace: React.FC = () => {
             </Content>
           </StudyPage>
           <StudyPage>
-            <h2 ref={ref4}>The "Noble Grapes" of Alsace</h2>
+            <h2 ref={ref4}>The “Noble Grapes” of Alsace</h2>
             <Content>
               <p>
                 Alsace and Alsace Grand Cru wines are usually labeled by variety, a rarity for French AOC wines. While
@@ -254,7 +254,7 @@ const Alsace: React.FC = () => {
         <SideNavLink reference={ref1}>The Region</SideNavLink>
         <SideNavLink reference={ref2}>Geology and Climate</SideNavLink>
         <SideNavLink reference={ref3}>Appellations in Alsace</SideNavLink>
-        <SideNavLink reference={ref4}>The "Noble Grapes" of Alsace</SideNavLink>
+        <SideNavLink reference={ref4}>The “Noble Grapes” of Alsace</SideNavLink>
         <SideNavLink reference={ref5}>Other Varieties in Alsace</SideNavLink>
         <SideNavLink reference={ref6}>Late Harvest Wines</SideNavLink>
         <SideNavLink reference={ref7}>Alsatian Wine: Dry or Sweet?</SideNavLink>
