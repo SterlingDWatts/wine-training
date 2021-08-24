@@ -3,7 +3,14 @@ import PropTypes from "prop-types";
 import ChevronDown from "../ChevronDown/ChevronDown";
 import "./NavbarAccordion.css";
 
-const NavbarAccordion = ({ title, toggleAccordion, showContents, children }) => {
+interface NavbarAccordionProps {
+  title: string;
+  toggleAccordion: () => void;
+  showContents: boolean;
+  children: any;
+}
+
+const NavbarAccordion: React.FC<NavbarAccordionProps> = ({ title, toggleAccordion, showContents, children }) => {
   return (
     <div className="NavbarAccordion">
       <div className="main" onClick={toggleAccordion}>

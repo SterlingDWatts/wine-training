@@ -14,7 +14,7 @@ import RhoneValley from "./pages/RhoneValley/RhoneValley";
 import LoireValley from "./pages/LoireValley/LoireValley";
 import "./App.css";
 
-const App = () => (
+const App: React.FC = () => (
   <div className="App">
     <Navbar />
     <Switch>

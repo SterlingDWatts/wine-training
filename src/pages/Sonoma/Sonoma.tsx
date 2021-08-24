@@ -22,7 +22,7 @@ import WineBottles from "../../assets/WineBottle.png";
 import SonomaCountyMap from "../../assets/SonomaCountyMap.jpg";
 import "./Sonoma.css";
 
-const Sonoma = () => {
+const Sonoma: React.FC = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);

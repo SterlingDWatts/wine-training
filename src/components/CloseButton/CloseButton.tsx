@@ -2,7 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./CloseButton.css";
 
-const CloseButton = ({ handleClick }) => {
+interface CloseButtonProps {
+  handleClick: () => void;
+}
+
+const CloseButton: React.FC<CloseButtonProps> = ({ handleClick }) => {
   return (
     <svg
       className="svg-icon nav-burger-close"

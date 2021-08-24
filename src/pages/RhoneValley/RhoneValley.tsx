@@ -11,7 +11,7 @@ import NorthernRhoneMap from "../../assets/NorthernRhoneMap.jpeg";
 import SouthernRhoneMap from "../../assets/SouthernRhoneMap.jpeg";
 import "./RhoneValley.css";
 
-const RhoneValley = () => {
+const RhoneValley: React.FC = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);

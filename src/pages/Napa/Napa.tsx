@@ -25,7 +25,7 @@ import Napa2 from "../../assets/Napa2.png";
 import NapaMap from "../../assets/NapaMap.png";
 import "./Napa.css";
 
-const Napa = () => {
+const Napa: React.FC = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);

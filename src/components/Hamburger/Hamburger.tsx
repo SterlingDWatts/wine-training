@@ -2,7 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Hamburger.css";
 
-const Hamburger = ({ handleClick }) => (
+interface HamburgerProps {
+  handleClick: () => void;
+}
+
+const Hamburger: React.FC<HamburgerProps> = ({ handleClick }) => (
   <button className="Hamburger" onClick={handleClick}>
     <svg
       height="18px"

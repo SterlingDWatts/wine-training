@@ -15,7 +15,7 @@ import CentralCoastMap from "../../assets/CentralCoastMap.jpeg";
 import SBMap from "../../assets/SBmap.jpeg";
 import "./CentralCoast.css";
 
-const CentralCoast = () => {
+const CentralCoast: React.FC = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);

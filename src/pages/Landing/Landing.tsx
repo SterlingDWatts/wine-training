@@ -13,7 +13,7 @@ import RhoneValleyThumb from "../../assets/RhoneValleyVineyardThumb.png";
 import LoireValleyThumb from "../../assets/LoireValleyThumb.png";
 import "./Landing.css";
 
-const Landing = () => {
+const Landing: React.FC = () => {
   const navigateToTop = () => {
     window.scrollTo(0, 0);
   };

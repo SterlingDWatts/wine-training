@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./StudyPage.css";
 
-const StudyPage = ({ children }) => (
+const StudyPage: React.FC<{ children: any }> = ({ children }) => (
   <div className="StudyPage">
     {children}
     <div className="bottom"></div>

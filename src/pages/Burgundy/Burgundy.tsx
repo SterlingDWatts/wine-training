@@ -14,7 +14,7 @@ import BurgundyMap from "../../assets/BurgundyMap.jpeg";
 import BurgundyMacconaiseMap from "../../assets/BurgundyMaconnaisAndBeaujolaisMap.jpeg";
 import "./Burgundy.css";
 
-const Burgundy = () => {
+const Burgundy: React.FC = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);

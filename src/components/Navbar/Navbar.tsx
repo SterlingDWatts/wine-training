@@ -55,10 +55,9 @@ const Navbar = () => {
     closeAllAccordions();
   };
 
-  const handleAccordionClick = (id) => {
-    const clickedAccordion = accordions.find((acc) => acc.id === id);
+  const handleAccordionClick = (id: number) => {
     const newAccordions = accordions.map((item) =>
-      item.id === id ? { ...item, collapsed: !clickedAccordion.collapsed } : { ...item, collapsed: true }
+      item.id === id ? { ...item, collapsed: !item.collapsed } : { ...item, collapsed: true }
     );
     setAccordions(newAccordions);
   };

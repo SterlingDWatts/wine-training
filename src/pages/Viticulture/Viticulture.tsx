@@ -19,7 +19,7 @@ import Veraison from "../../assets/Veraison.png";
 import GreenHarvest from "../../assets/GreenHarvest.png";
 import "./Viticulture.css";
 
-const Viticulture = () => {
+const Viticulture: React.FC = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
