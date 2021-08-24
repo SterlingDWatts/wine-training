@@ -15,14 +15,6 @@ const Navbar = () => {
     { id: 1, collapsed: true },
   ]);
 
-  const handleAccordionClick = (id) => {
-    const clickedAccordion = accordions.find((acc) => acc.id === id);
-    const newAccordions = accordions.map((item) =>
-      item.id === id ? { ...item, collapsed: !clickedAccordion.collapsed } : { ...item, collapsed: true }
-    );
-    setAccordions(newAccordions);
-  };
-
   const onLandingPage = useRouteMatch({
     path: "/",
     strict: true,
@@ -51,6 +43,26 @@ const Navbar = () => {
     window.scrollTo(0, 0);
   };
 
+  const closeAllAccordions = () => {
+    const newAccordions = accordions.map((item) => {
+      return { ...item, collapsed: true };
+    });
+    setAccordions(newAccordions);
+  };
+
+  const handleToggleNavClick = () => {
+    toggleSubnav();
+    closeAllAccordions();
+  };
+
+  const handleAccordionClick = (id) => {
+    const clickedAccordion = accordions.find((acc) => acc.id === id);
+    const newAccordions = accordions.map((item) =>
+      item.id === id ? { ...item, collapsed: !clickedAccordion.collapsed } : { ...item, collapsed: true }
+    );
+    setAccordions(newAccordions);
+  };
+
   return (
     <div
       className={classnames("Navbar", {
@@ -65,7 +77,11 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="right">
-          {!showSubnav ? <Hamburger handleClick={toggleSubnav} /> : <Times handleClick={toggleSubnav} />}
+          {!showSubnav ? (
+            <Hamburger handleClick={handleToggleNavClick} />
+          ) : (
+            <Times handleClick={handleToggleNavClick} />
+          )}
         </div>
       </nav>
       <nav
