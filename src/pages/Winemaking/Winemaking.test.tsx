@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import Sonoma from "./Sonoma";
+import Winemaking from "./Winemaking";
 
-describe("Sonoma Component", () => {
+describe("Winemaking Page", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
       <BrowserRouter>
-        <Sonoma />
+        <Winemaking />
       </BrowserRouter>,
       div
     );

@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import CentralCoast from "./CentralCoast";
+import Landing from "./Landing";
 
-describe("CentralCoast Component", () => {
+describe("Landing Page", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
       <BrowserRouter>
-        <CentralCoast />
+        <Landing />
       </BrowserRouter>,
       div
     );

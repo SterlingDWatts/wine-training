@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import Winemaking from "./Winemaking";
+import Burgundy from "./Burgundy";
 
-describe("Winemaking Component", () => {
+describe("Burgundy Page", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
       <BrowserRouter>
-        <Winemaking />
+        <Burgundy />
       </BrowserRouter>,
       div
     );
