@@ -17,3 +17,7 @@
 .NavbarAccordion .children {
   padding-left: 16px;
 }
+
+.subnav--hidden .NavbarAccordion .children {
+  display: none;
+}
