@@ -18,6 +18,13 @@
   padding-left: 16px;
 }
 
-.subnav--hidden .NavbarAccordion .children {
-  display: none;
+.Navbar nav.subnav .section a > div {
+  height: 40px;
+  overflow: hidden;
+  transition: height 0.6s;
+}
+
+.Navbar nav.subnav .section .accordion--collapsed a > div,
+.Navbar nav.subnav.subnav--hidden .section a > div {
+  height: 0px;
 }

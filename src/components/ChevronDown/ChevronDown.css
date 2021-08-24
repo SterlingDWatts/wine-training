@@ -24,3 +24,7 @@ button.ChevronDown {
 .ChevronDown.rotate svg {
   transform: rotate(180deg);
 }
+
+.subnav--hidden .ChevronDown.rotate svg {
+  transform: rotate(0deg);
+}

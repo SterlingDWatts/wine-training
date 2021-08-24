@@ -12,7 +12,7 @@ const NavbarAccordion = ({ title, children }) => {
         <div className="title">{title}</div>
         <ChevronDown showContents={showContents} />
       </div>
-      <div className="children">{showContents && children}</div>
+      <div className={showContents ? "children" : "children accordion--collapsed"}>{children}</div>
     </div>
   );
 };
