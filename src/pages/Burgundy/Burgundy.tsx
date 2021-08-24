@@ -15,21 +15,21 @@ import BurgundyMacconaiseMap from "../../assets/BurgundyMaconnaisAndBeaujolaisMa
 import "./Burgundy.css";
 
 const Burgundy: React.FC = () => {
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
-  const ref4 = useRef(null);
-  const ref5 = useRef(null);
-  const ref6 = useRef(null);
-  const ref7 = useRef(null);
-  const ref8 = useRef(null);
-  const ref9 = useRef(null);
-  const ref10 = useRef(null);
-  const ref11 = useRef(null);
-  const ref12 = useRef(null);
-  const ref13 = useRef(null);
-  const ref14 = useRef(null);
-  const ref15 = useRef(null);
+  const ref1 = useRef<HTMLHeadingElement>(null);
+  const ref2 = useRef<HTMLHeadingElement>(null);
+  const ref3 = useRef<HTMLHeadingElement>(null);
+  const ref4 = useRef<HTMLHeadingElement>(null);
+  const ref5 = useRef<HTMLHeadingElement>(null);
+  const ref6 = useRef<HTMLHeadingElement>(null);
+  const ref7 = useRef<HTMLHeadingElement>(null);
+  const ref8 = useRef<HTMLHeadingElement>(null);
+  const ref9 = useRef<HTMLHeadingElement>(null);
+  const ref10 = useRef<HTMLHeadingElement>(null);
+  const ref11 = useRef<HTMLHeadingElement>(null);
+  const ref12 = useRef<HTMLHeadingElement>(null);
+  const ref13 = useRef<HTMLHeadingElement>(null);
+  const ref14 = useRef<HTMLHeadingElement>(null);
+  const ref15 = useRef<HTMLHeadingElement>(null);
   return (
     <>
       <Page className="Burgundy">

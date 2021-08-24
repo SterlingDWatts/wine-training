@@ -12,15 +12,15 @@ import AlsaceMap from "../../assets/AlsaceMap.jpeg";
 import "./Alsace.css";
 
 const Alsace: React.FC = () => {
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
-  const ref4 = useRef(null);
-  const ref5 = useRef(null);
-  const ref6 = useRef(null);
-  const ref7 = useRef(null);
-  const ref8 = useRef(null);
-  const ref9 = useRef(null);
+  const ref1 = useRef<HTMLHeadingElement>(null);
+  const ref2 = useRef<HTMLHeadingElement>(null);
+  const ref3 = useRef<HTMLHeadingElement>(null);
+  const ref4 = useRef<HTMLHeadingElement>(null);
+  const ref5 = useRef<HTMLHeadingElement>(null);
+  const ref6 = useRef<HTMLHeadingElement>(null);
+  const ref7 = useRef<HTMLHeadingElement>(null);
+  const ref8 = useRef<HTMLHeadingElement>(null);
+  const ref9 = useRef<HTMLHeadingElement>(null);
 
   return (
     <>

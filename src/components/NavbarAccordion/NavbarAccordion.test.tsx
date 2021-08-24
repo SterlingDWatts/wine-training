@@ -6,7 +6,7 @@ describe("NavbarAccordion Component", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
-      <NavbarAccordion title="test">
+      <NavbarAccordion title="test" toggleAccordion={() => {}} showContents>
         <div></div>
       </NavbarAccordion>,
       div

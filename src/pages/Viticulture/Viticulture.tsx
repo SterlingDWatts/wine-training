@@ -20,10 +20,10 @@ import GreenHarvest from "../../assets/GreenHarvest.png";
 import "./Viticulture.css";
 
 const Viticulture: React.FC = () => {
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
-  const ref4 = useRef(null);
+  const ref1 = useRef<HTMLHeadingElement>(null);
+  const ref2 = useRef<HTMLHeadingElement>(null);
+  const ref3 = useRef<HTMLHeadingElement>(null);
+  const ref4 = useRef<HTMLHeadingElement>(null);
   return (
     <>
       <Page className="Viticulture">

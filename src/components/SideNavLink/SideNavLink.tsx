@@ -4,7 +4,7 @@ import classnames from "classnames";
 import "./SideNavLink.css";
 
 interface SideNavLinkProps {
-  reference: React.MutableRefObject<any>;
+  reference: any;
   children: any;
 }
 
@@ -54,10 +54,10 @@ SideNavLink.propTypes = {
   reference: PropTypes.shape({
     current: PropTypes.shape({
       parentElement: PropTypes.shape({
-        offsetTop: PropTypes.number.isRequired,
-        clientHeight: PropTypes.number.isRequired,
-      }).isRequired,
-    }).isRequired,
+        offsetTop: PropTypes.number,
+        clientHeight: PropTypes.number,
+      }),
+    }),
   }).isRequired,
   children: PropTypes.string.isRequired,
 };

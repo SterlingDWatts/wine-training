@@ -13,20 +13,13 @@ import CentralVineyardsMap from "../../assets/CentralVineyards.jpeg";
 import "./LoireValley.css";
 
 const LoireValley: React.FC = () => {
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const ref3 = useRef(null);
-  const ref4 = useRef(null);
-  const ref5 = useRef(null);
-  const ref6 = useRef(null);
-  // const ref7 = useRef(null);
-  // const ref8 = useRef(null);
-  // const ref9 = useRef(null);
-  // const ref10 = useRef(null);
-  // const ref11 = useRef(null);
-  // const ref12 = useRef(null);
-  // const ref13 = useRef(null);
-  // const ref14 = useRef(null);
+  const ref1 = useRef<HTMLHeadingElement>(null);
+  const ref2 = useRef<HTMLHeadingElement>(null);
+  const ref3 = useRef<HTMLHeadingElement>(null);
+  const ref4 = useRef<HTMLHeadingElement>(null);
+  const ref5 = useRef<HTMLHeadingElement>(null);
+  const ref6 = useRef<HTMLHeadingElement>(null);
+
   return (
     <>
       <Page className="LoireValley">
@@ -169,7 +162,7 @@ const LoireValley: React.FC = () => {
                 <strong>Pouilly-Fumé AOP:</strong> Located across the Loire River from Sancerre, the wines of the
                 Pouilly-sur-Loire and surrounding townships are similar in style. In contrast with Sancerre, tasters may
                 ascribe a greater presence of flint and smoke to the wines of Pouilly, and oak is a more common feature
-                in the region&apos;s cellars.
+                in the region’s cellars.
               </p>
               <h3>Cabernet Franc</h3>
               <p>
@@ -191,7 +184,7 @@ const LoireValley: React.FC = () => {
                 Chinon is the most famous address for Cabernet Franc in the Loire, but there are other AOPs in its
                 vicinity that produce a very similar style of wine. The rustic reds of neighboring Bourgueil AOP and the
                 more floral, aromatic examples from Saumur-Champigny AOP, whose name is derived from the Latin campus
-                ignis, or &quot;field of fire&quot;, can be every bit as good as Chinon itself.
+                ignis, or “field of fire”, can be every bit as good as Chinon itself.
               </p>
               <h3>Pinot Noir</h3>
               <p>
