@@ -5,6 +5,7 @@ import "./NavbarAccordion.css";
 
 const NavbarAccordion = ({ title, children }) => {
   const [showContents, setShowContents] = useState(false);
+
   return (
     <div className="NavbarAccordion">
       <div className="main" onClick={() => setShowContents(!showContents)}>
