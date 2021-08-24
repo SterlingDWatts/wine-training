@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
-import PacificNorthwest from "./PacificNorthwest";
+import Napa from "./Napa";
 
-describe("PacificNorthwest Component", () => {
+describe("Napa Page", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
       <BrowserRouter>
-        <PacificNorthwest />
+        <Napa />
       </BrowserRouter>,
       div
     );
