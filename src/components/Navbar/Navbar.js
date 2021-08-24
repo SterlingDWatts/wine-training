@@ -10,6 +10,18 @@ import NavbarAccordion from "../NavbarAccordion/NavbarAccordion";
 const Navbar = () => {
   const [showNav, atTop] = useScroll();
   const [showSubnav, setShowSubnav] = useState(false);
+  const [accordions, setAccordions] = useState([
+    { id: 0, collapsed: true },
+    { id: 1, collapsed: true },
+  ]);
+
+  const handleAccordionClick = (id) => {
+    const clickedAccordion = accordions.find((acc) => acc.id === id);
+    const newAccordions = accordions.map((item) =>
+      item.id === id ? { ...item, collapsed: !clickedAccordion.collapsed } : { ...item, collapsed: true }
+    );
+    setAccordions(newAccordions);
+  };
 
   const onLandingPage = useRouteMatch({
     path: "/",
@@ -69,7 +81,11 @@ const Navbar = () => {
             <Link to="/study-guide/winemaking" onClick={hideSubnav}>
               <div>Winemaking</div>
             </Link>
-            <NavbarAccordion title="USA">
+            <NavbarAccordion
+              title="USA"
+              showContents={accordions[0].collapsed}
+              toggleAccordion={() => handleAccordionClick(0)}
+            >
               <Link to="/study-guide/usa/napa" onClick={hideSubnav}>
                 <div>Napa Valley</div>
               </Link>
@@ -83,7 +99,11 @@ const Navbar = () => {
                 <div>Pacific Northwest</div>
               </Link>
             </NavbarAccordion>
-            <NavbarAccordion title="France">
+            <NavbarAccordion
+              title="France"
+              showContents={accordions[1].collapsed}
+              toggleAccordion={() => handleAccordionClick(1)}
+            >
               <Link to="/study-guide/france/bordeaux" onClick={hideSubnav}>
                 <div>Bordeaux</div>
               </Link>
