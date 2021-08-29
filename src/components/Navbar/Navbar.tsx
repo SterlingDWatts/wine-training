@@ -4,8 +4,8 @@ import classnames from "classnames";
 import useScroll from "../../hooks/useScroll";
 import Hamburger from "../Hamburger/Hamburger";
 import Times from "../Times/Times";
-import "./Navbar.css";
 import NavbarAccordion from "../NavbarAccordion/NavbarAccordion";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [showNav, atTop] = useScroll();
@@ -133,6 +133,9 @@ const Navbar = () => {
               </Link>
               <Link to="/study-guide/france/alsace" onClick={hideSubnav}>
                 <div>Alsace</div>
+              </Link>
+              <Link to="/study-guide/france/champagne" onClick={hideSubnav}>
+                <div>Champagne</div>
               </Link>
             </NavbarAccordion>
           </div>
