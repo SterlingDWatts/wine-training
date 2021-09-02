@@ -1,0 +1,12 @@
+@use "@material/button/styles";
+@use "@material/button";
+
+.primary-button,
+.primary-outlined-button {
+  --mdc-theme-primary: rgb(85, 26, 139);
+  --mdc-theme-on-primary: #442c2e;
+}
+
+.primary-button.mdc-button--raised {
+  @include button.ink-color(white);
+}

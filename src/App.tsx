@@ -14,6 +14,7 @@ import RhoneValley from "./pages/RhoneValley/RhoneValley";
 import LoireValley from "./pages/LoireValley/LoireValley";
 import Alsace from "./pages/Alsace/Alsace";
 import Champagne from "./pages/Champagne/Champagne";
+import Quiz from "./components/Quiz/Quiz";
 import "./App.css";
 
 const App: React.FC = () => (
@@ -58,6 +59,9 @@ const App: React.FC = () => (
       </Route>
       <Route path="/study-guide/france/champagne">
         <Champagne />
+      </Route>
+      <Route path="/quiz">
+        <Quiz />
       </Route>
       <Route path="*">
         <Redirect to="/" />
