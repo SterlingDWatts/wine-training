@@ -1,0 +1,14 @@
+@use "@material/checkbox";
+@use "@material/form-field";
+
+@include checkbox.core-styles;
+@include form-field.core-styles;
+
+.CheckBox.hide--checkmark-svg .mdc-checkbox__checkmark,
+.CheckBox .fa-times {
+  display: none;
+}
+
+.CheckBox.display--times-svg .fa-times {
+  display: initial;
+}
